@@ -1,0 +1,50 @@
+.table{
+  padding: 24px;
+
+  .table-title{
+    height: 50px;
+    margin-bottom: initial;
+    h4{
+      //color: #2196f3;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .button-add{
+      position: relative;
+
+      .admin-add-div{
+        z-index: 3;
+        position: absolute;
+
+        margin-top: 0;
+        width: 350px;
+        right: 50px;
+        top: 20px;
+
+        //opacity:1;
+        //transition:opacity 0.2s linear;
+
+        transition: 0.2s;
+        transform: scale(1);
+        transform-origin: top right;
+      }
+
+      .hidden{
+        //opacity:0;
+        //transition-delay:0s;
+        transform: scale(0);
+      }
+    }
+  }
+  .table-head {
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: initial;
+
+    h6{
+      font-weight: bold;
+
+    }
+  }
+}

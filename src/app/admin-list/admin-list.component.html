@@ -1,0 +1,29 @@
+<div class="table col s12">
+  <div class="card-title table-title row">
+    <h4 class="table-title-text col s2">Пользователи</h4>
+    <div class="col s1 push-s9 button-add">
+      <button class="btn-floating waves-effect waves-light blue accent-1" (click)="onToggle()">
+        <i class="material-icons">add</i>
+      </button>
+      <div class="admin-add-div hidden">
+        <admin-add></admin-add>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-head row">
+    <div class="table-col col s1">
+      <h6>№</h6>
+    </div>
+    <div class="table-col col s4">
+      <h6>Почта</h6>
+    </div>
+    <div class="table-col col s5">
+      <h6>Код доступа</h6>
+    </div>
+  </div>
+  <div class="table-body">
+    <admin-user *ngFor="let user of users" [user]="user" (delete)="delete($event)"  ></admin-user>
+  </div>
+</div>
+

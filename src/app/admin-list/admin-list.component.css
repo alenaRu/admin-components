@@ -1,0 +1,30 @@
+.table {
+  padding: 24px; }
+  .table .table-title {
+    height: 50px;
+    margin-bottom: initial; }
+    .table .table-title h4 {
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 0; }
+    .table .table-title .button-add {
+      position: relative; }
+      .table .table-title .button-add .admin-add-div {
+        z-index: 3;
+        position: absolute;
+        margin-top: 0;
+        width: 350px;
+        right: 50px;
+        top: 20px;
+        transition: 0.2s;
+        transform: scale(1);
+        transform-origin: top right; }
+      .table .table-title .button-add .hidden {
+        transform: scale(0); }
+  .table .table-head {
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: initial; }
+    .table .table-head h6 {
+      font-weight: bold; }
+
+/*# sourceMappingURL=admin-list.component.css.map */
